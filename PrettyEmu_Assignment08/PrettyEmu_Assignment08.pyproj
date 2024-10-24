@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e4c581bc-a959-40dd-9396-a0f1e990b438</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>package1\main.py</StartupFile>
+    <StartupFile>mainPackage\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,10 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="package1\__init__.py">
+    <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="package1\main.py" />
+    <Compile Include="mainPackage\main.py" />
     <Compile Include="package2\Sidney.py">
       <SubType>Code</SubType>
     </Compile>
@@ -45,7 +45,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="package1\" />
+    <Folder Include="mainPackage\" />
     <Folder Include="package2\" />
     <Folder Include="package3\" />
     <Folder Include="package4\" />
