@@ -11,49 +11,44 @@
 # *****************************************************
 # cheikh py
 
-
 class EidCelebration:
-    def __init__(self, celebration_name, family_gathering, gift_price):
-        self.celebration_name = celebration_name
-        self.family_gathering = family_gathering  
-        self._gift_price = gift_price  
-
-    def __str__(self):
-        return f"Celebration_name = {self.celebration_name}, family_gathering = {self.family_gathering}, gift_price = {self._gift_price})"
-
-    def __repr__(self):
-        return f"{self.celebration_name}, {self.family_gathering}, {self._gift_price}"
-
-    @property
-    def gift_price(self):
-        return self._gift_price
-
-    @gift_price.setter
-    def gift_budget(self, value):
-        if value >= 0:
-            self._gift_price = value
-        else:
-            print("Price of gift can't be negative.")
-
-    def prepare_meal(self):
+    """
+    Model different activities to celebrate the holiday Eid
+    """
+    def __init__(self, type): #__init_
         """
-        Preparing a meal for the Eid celebration
+        Constructor
+        @param type String: The type of activity
         """
-        return "The Eid lunch is being prepared with traditional senegalese cuisine."
+        self._type = type
+    def get_type(self): #getter
+        """
+        @return String: The activity type of the current object return self.-type
+        """
+    def set_type(self, type): #setter
+        """
+        Assign a value to the activity type of the current object 
+        @param type String: The activity type to be assigned.
+        """
+        self .__type = type
 
-    def share_gift(self):
+    def print_type(self):
         """
-        Sharing gifts with family members
+        Print the activity type of the current object
         """
-        if self.family_gathering:
-            return f"Gift is shared with a price tag of ${self._gift_price}!"
-        else:
-            return "Gift is not being shared."
+        print (self.__type)
 
-    def turn_on_lightsandmusic(self):
+    def __str__(self): #__str_
         """
-        Turning on celebration lights for Eid
+        @return String: A human-readable basic representation of the current object.
+        Useful for debugging, documentation, etc.
         """
-        return "Lights and music have been turned on for Eid."
+        return "type:" + self.__type
+
+    def __repr__(self): # repr_
+        """
+        return String: A string containing code that can be executed to create a copy of the current object
+        """
+        return f"EidCelebration('{self.__type}')"
 
 
