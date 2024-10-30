@@ -54,21 +54,5 @@ class ChristmasCookies(object):
         """
         @return String: A string containing code that can be executed to create a copy of the current object
         """
-        return f"Cookie('{self.__type}')"
+        return f"ChristmasCookies('{self.__type}')"
     
-if __name__ == "__main__":
-    print("Christmas cookie class test logic...")
-    cookies = ChristmasCookies("Sugar Cookie") 
-    print("Type attribute of Cookie object:", cookies.get_type())
-    print("Changing the type of the object...")
-    cookies.set_type("Frosted Sugtar Cookie")
-    print("Type attribute of the Christmas Cookies object:", cookies.get_type())
-
-    print("\n\nTesting the repr method...")
-
-    print("From __repr__():", cookies.__repr__())
-    cookiesCopy = eval(cookies.__repr__())
-    print("Copied car:", cookiesCopy.__str__())
-
-    print("Type attribute of original Christmas Cookies object:", cookies.get_type())
-    print("Type attribute of copied Christmas Cookies object:", cookiesCopy.get_type())

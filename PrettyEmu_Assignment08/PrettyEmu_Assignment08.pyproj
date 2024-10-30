@@ -25,30 +25,30 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
-    <Compile Include="package2\Sidney.py">
+    <Compile Include="ChristmasPackage\Sidney.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="package2\__init__.py">
+    <Compile Include="ChristmasPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="package3\Roman.py">
+    <Compile Include="HalloweenPackage\Roman.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="package3\__init__.py">
+    <Compile Include="HalloweenPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="package4\Cheikh.py">
+    <Compile Include="EidPackage\Cheikh.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="package4\__init__.py">
+    <Compile Include="EidPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="mainPackage\" />
-    <Folder Include="package2\" />
-    <Folder Include="package3\" />
-    <Folder Include="package4\" />
+    <Folder Include="ChristmasPackage\" />
+    <Folder Include="HalloweenPackage\" />
+    <Folder Include="EidPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
